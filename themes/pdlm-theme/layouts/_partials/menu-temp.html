@@ -1,0 +1,54 @@
+{{- /*
+Renders a menu for the given menu ID.
+
+@context {page} page The current page.
+@context {string} menuID The menu ID.
+
+@example: {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+*/}}
+
+{{- $page := .page }}
+{{- $menuID := .menuID }}
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top p-0">
+  <div class="container px-md-0">
+    <a class="navbar-brand" href="/">
+      <img class="" src="/images/ESPeople-logo.png" alt="ESPeople logo" title="ESPeople logo">
+      <!-- <div class="brand-name">
+        <h2 class="brand mb-0">ESPeople</h2>
+        <p class="tagline mb-0">TrainingSmiths</p>
+      </div> -->
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse px-4 px-lg-0" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+        {{- with index site.Menus $menuID }}
+        {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+        {{- end }}
+      </ul>
+      <div class="d-flex align-items-center ms-3 d-none">
+        <p class="mb-0 me-3"><i class="fa-solid fa-mobile-screen-button me-2"></i><a
+            href="tel:+919962006364">9962006364</a></p>
+        <p class="mb-0"><i class="fa-regular fa-envelope me-2"></i><a
+            href="mailto:link2rmd@gmail.com">link2rmd@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Add this script at the end of your page or in a JS file -->
+<script>
+  document.addEventListener('click', function(event) {
+    var navbarToggler = document.querySelector('.navbar-toggler');
+    var navbarCollapse = document.querySelector('#navbarNav');
+    
+    if (navbarCollapse.classList.contains('show') && !navbarCollapse.contains(event.target) && !navbarToggler.contains(event.target)) {
+      navbarToggler.click(); // Closes the navbar if an outside click is detected
+    }
+  });
+</script>
