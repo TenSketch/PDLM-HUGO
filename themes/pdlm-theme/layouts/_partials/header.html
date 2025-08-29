@@ -1,2 +1,56 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<nav class="navbar navbar-expand-lg bg-secondary-light fixed-top shadow-sm py-0">
+    <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand py-0" href="{{ " /" | relURL }}">
+            <img src="{{ .Site.Params.logo | relURL }}" alt="Logo PDLM" class="img-fluid logo">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler text-primary border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 g-4">
+                {{ $page := . }}
+                {{ range site.Menus.main }}
+                {{ if .HasChildren }}
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-primary {{ if or ($page.IsMenuCurrent " main" .)
+                        ($page.HasMenuCurrent "main" .) }}active fw-bold{{ end }}" href="#"
+                        id="navbarDropdown{{ .Identifier }}" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        {{ .Name }}
+                    </a>
+                    <ul class="dropdown-menu">
+                        {{ range .Children }}
+                        <li>
+                            <a class="dropdown-item {{ if $page.IsMenuCurrent " main" . }}active{{ end }}"
+                                href="{{ .URL }}">
+                                {{ .Name }}
+                            </a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </li>
+                {{ else }}
+                <!-- Normal Menu -->
+                <li class="nav-item">
+                    <a class='{{ with .Params.class }}{{ . }}{{ else }}nav-link text-primary{{ end }} {{ if $page.IsMenuCurrent "main" . }}fw-bold text-primary{{ end }}'
+                        href="{{ .URL | safeURL }}">
+                        {{ .Pre | safeHTML }}{{ .Name }}
+                    </a>
+                </li>
+
+                {{ end }}
+                {{ end }}
+
+
+            </ul>
+        </div>
+    </div>
+</nav>

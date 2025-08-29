@@ -1,7 +1,45 @@
 {{ define "main" }}
-  {{ .Content }}
-  {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}
+<!-- carousel hero -->
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    {{ range $index, $slide := .Params.carousel }}
+      <div class="carousel-item {{ if eq $index 0 }}active{{ end }}">
+        <img src="{{ $slide.src | relURL }}" class="d-block w-100" alt="{{ $slide.alt }}">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-5 fw-bold">{{ $slide.title }}</h1>
+          <p class="lead">{{ $slide.description }}</p>
+          <a href="{{ $slide.button.link }}" class="btn btn-primary btn-lg">{{ $slide.button.text }}</a>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- seccess stories section -->
+<section class="section-template py-c">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md-6">
+        <img src="{{ .Params.successStory.image | relURL }}" 
+             alt="{{ .Params.successStory.alt }}" 
+             class="img-fluid rounded shadow-lg">
+      </div>
+      <div class="col-md-5">
+        <h2>{{ .Params.successStory.title }}</h2>
+        <p>{{ .Params.successStory.description | markdownify }}</p>
+        <a href="{{ .Params.successStory.button.link }}" 
+           class="btn btn-primary">{{ .Params.successStory.button.text }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 {{ end }}

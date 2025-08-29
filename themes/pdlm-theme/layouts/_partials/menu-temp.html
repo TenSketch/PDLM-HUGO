@@ -52,3 +52,12 @@ Renders a menu for the given menu ID.
     }
   });
 </script>
+
+{{ define "main" }}
+<h1>this page renders all the single page content within thin the content folder </h1>
+  {{ .Content }}
+  {{ range site.RegularPages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ .Summary }}
+  {{ end }}
+{{ end }}
