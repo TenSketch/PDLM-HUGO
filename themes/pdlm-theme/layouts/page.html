@@ -1,11 +1,15 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  <h2>Single page content</h2>
 
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+  <section class="about-banner py-5 bg-light text-center">
+      <div class="container">
+        <!-- hugo default front matter is title -->
+        <h1 class="fw-bold">{{ page.Title }}</h1>
+        <!-- custom front matter is subtitle -->
+        <p class="lead">{{ .Params.subtitle }}</p>
+      </div>
+    </section>
+    {{ partial "alt-sections.html" . }}
 
-  {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+  
 {{ end }}

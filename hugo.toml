@@ -71,7 +71,7 @@ og_image = "/ogimage.jpg"
 
   [[menu.main]]
     name = "Get Involved"
-    url = "/volunteer/"
+    url = "/posts/"
     weight = 9
     params = { class = "btn btn-primary text-light" }
 

@@ -1,0 +1,24 @@
+<section class="three-col-layout py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">{{ .title }}</h2>
+    <div class="row text-center justify-content-center">
+      {{ range .data }}
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            {{ with .icon }}
+              <i class="{{ . }} fa-3x mb-3 text-primary"></i>
+            {{ end }}
+            {{ with .image }}
+              <img src="{{ . }}" alt="{{ $.alt }}" class="card-img-top">
+            {{ end }}
+            <div class="card-body">
+              <h5 class="fw-bold">{{ .title }}</h5>
+              <p>{{ .description }}</p>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+

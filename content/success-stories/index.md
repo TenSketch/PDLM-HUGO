@@ -1,12 +1,12 @@
 ---
-title: 'About us'
+title: 'Success Stories'
 subtitle: 'Hope. Dignity. Change. Since 1993.'
 date: 2025-01-01T08:00:00-07:00
 draft: false
 
 altSections: [
   {
-    image: "/images/Sathya_School-Selimedu-children-classroom-photo.jpg",
+    image: "/images/Sathya_School-Selimedu-building-photo.jpg",
     alt  : "Satya School classroom",
     title: "Who We Are",
     description: "Partage dans le monde is a humanitarian association composed entirely of volunteers. We have been carrying out actions in India since 1993 and in Nepal since 2000. Since its creation, Doctor Byramjee, its founder, has established medical and social missions in support of extremely disadvantaged populations in partnership with local structures. Two annual missions are necessary to meet the population's needs and sustain our on-the-ground actions.",

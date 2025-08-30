@@ -23,23 +23,14 @@
   </button>
 </div>
 
-<!-- seccess stories section -->
-<section class="section-template py-c">
-  <div class="container">
-    <div class="row align-items-center justify-content-between">
-      <div class="col-md-6">
-        <img src="{{ .Params.successStory.image | relURL }}" 
-             alt="{{ .Params.successStory.alt }}" 
-             class="img-fluid rounded shadow-lg">
-      </div>
-      <div class="col-md-5">
-        <h2>{{ .Params.successStory.title }}</h2>
-        <p>{{ .Params.successStory.description | markdownify }}</p>
-        <a href="{{ .Params.successStory.button.link }}" 
-           class="btn btn-primary">{{ .Params.successStory.button.text }}</a>
-      </div>
-    </div>
-  </div>
-</section>
+    {{ partial "alt-sections.html" . }}
+    
+
+{{ partial "three-col-layout.html" (dict "context" . "title" "Our Stats" "data" .Params.threeColLayoutStats) }}
+{{ partial "three-col-layout.html" (dict "context" . "title" "Our Current Focus" "data" .Params.threeColLayoutFocus) }}
+{{ partial "three-col-layout.html" (dict "context" . "title" "Testimonials" "data" .Params.testimonials) }}
+
+
+
 
 {{ end }}

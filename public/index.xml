@@ -9,11 +9,11 @@
     <lastBuildDate>Wed, 01 Jan 2025 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About</title>
+      <title>About us</title>
       <link>http://localhost:1313/about-us/</link>
       <pubDate>Wed, 01 Jan 2025 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/about-us/</guid>
-      <description>&lt;h1 id=&#34;about-us-content-new&#34;&gt;about us content new&lt;/h1&gt;&#xA;&lt;p&gt;Laborum voluptate pariatur ex culpa magna nostrud est incididunt fugiat&#xA;pariatur do dolor ipsum enim. Consequat tempor do dolor eu. Non id id anim anim&#xA;excepteur excepteur pariatur nostrud qui irure ullamco.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;about-contnenknk&#34;&gt;about contnenknk&lt;/h2&gt;&#xA;&lt;p&gt;lorem&lt;/p&gt;</description>
     </item>
     <item>
       <title>Post 3</title>

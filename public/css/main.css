@@ -135,7 +135,7 @@ main {
 }
 
 .logo {
-    max-height:80px;
+    max-height: 80px;
 }
 
 .bg-image {
@@ -160,4 +160,14 @@ main {
 .row {
     display: flex;
     flex-wrap: wrap;
+}
+
+.alt-sections {
+    .row:nth-of-type(even) {
+        .col-md-6 {
+            order: 2;
+
+        }
+    }
+
 }
