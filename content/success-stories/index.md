@@ -7,15 +7,21 @@ draft: false
 altSections: [
   {
     image: "/images/Sathya_School-Selimedu-building-photo.jpg",
-    alt  : "Satya School classroom",
-    title: "Who We Are",
-    description: "Partage dans le monde is a humanitarian association composed entirely of volunteers. We have been carrying out actions in India since 1993 and in Nepal since 2000. Since its creation, Doctor Byramjee, its founder, has established medical and social missions in support of extremely disadvantaged populations in partnership with local structures. Two annual missions are necessary to meet the population's needs and sustain our on-the-ground actions.",
+    alt  : "Satya School building",
+    title: "Selimedu (State of Puducherry)",
+    description: "A dispensary was created in 2003 in this village located 15 km southwest of Puducherry, with the financial support of the European Union as part of a 5-year partnership. The site consists of two buildings, now used by Satya School, a socio-educational structure welcoming children with special needs daily. About fifty children are supervised by specialised educators. The Mahatma Gandhi Medical College offers a weekly medical consultation, ensuring solidarity with the rural population while training its interns.",
   },
+
     {
-    image: "/images/Sathya_School-Selimedu-children-activities-photo.jpg",
-    alt  : "Satya School activities",
-    title: "Our Journey",
-    description: "Since 1993, we have been carrying out medical, social, and educational activities in favour of indigent populations in South India. Among other things, we have carried out 200,000 consultations, financed and managed 4 dispensaries, a sewing workshop, two 4X4s, and an ambulance. Needs have evolved in India since 1993, and access to care is better managed by government and private structures. Partage dans le monde nevertheless maintains a presence through 2 medico-social centres, under the responsibility of its local partner Partage dans le monde Puducherry.",
+    image: "/images/PDLM_Education_sponsor.jpg",
+    alt  : "Education sponsor",
+    title: "Education Sponsor ",
+    description: "Mancikalalu onlus has been collaborating with “Partage dans le Monde” since 2024 with the shared goal of providing educational support to a group of students in Hyderabad who come from underprivileged and challenging coming family backgrounds. Through this partnership, we aim to offer these young individuals not only access to education, but also the opportunity to build a better future for themselves and their communities. We believe that every child deserves the chance to learn, grow, and thrive-regardless of their circumstances.
+
+    School fees and supplies
+    Uniforms and learning materials
+    Extracurricular and life skills programs
+    Invest in a child’s education today — and change a life forever.",
   }
 
 ]

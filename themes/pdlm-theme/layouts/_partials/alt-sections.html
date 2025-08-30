@@ -9,6 +9,7 @@
       </div>
       <div class="col-md-5">
         <h2>{{ .title }}</h2>
+        <h3>{{ .subtitle }}</h3>
         <p>{{ .description | markdownify }}</p>
         {{ with .button }}
           <a href="{{ .link }}" class="btn btn-primary">{{ .text }}</a>

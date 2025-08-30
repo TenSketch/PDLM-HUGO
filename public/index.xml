@@ -16,6 +16,20 @@
       <description>&lt;h2 id=&#34;about-contnenknk&#34;&gt;about contnenknk&lt;/h2&gt;&#xA;&lt;p&gt;lorem&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Our Work</title>
+      <link>http://localhost:1313/our-work/</link>
+      <pubDate>Wed, 01 Jan 2025 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/our-work/</guid>
+      <description>&lt;h2 id=&#34;about-contnenknk&#34;&gt;about contnenknk&lt;/h2&gt;&#xA;&lt;p&gt;lorem&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Success Stories</title>
+      <link>http://localhost:1313/success-stories/</link>
+      <pubDate>Wed, 01 Jan 2025 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/success-stories/</guid>
+      <description>&lt;h2 id=&#34;about-contnenknk&#34;&gt;about contnenknk&lt;/h2&gt;&#xA;&lt;p&gt;lorem&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Post 3</title>
       <link>http://localhost:1313/posts/post-3/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
