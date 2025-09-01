@@ -148,6 +148,34 @@ main {
     background-image: url(/assets/images/Sathya_School-Selimedu-group-photo.jpg);
 }
 
+
+/* carousel styles */
+
+@media(min-width:768px){
+
+    .carousel-inner{
+        min-height: 90vh;
+    }
+    .carousel-item{
+        height: 100%;
+        overflow: hidden;
+        img{
+            /* width: 100%; */
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.carousel-caption{
+  
+    /* h1{
+        font-size: min(1.5rem, 4rem);
+     
+    }
+    p{
+        font-size:  mins( 1rem, 1.5rem );
+    } */
+}
 .pt-5 {
     padding-top: 5rem;
 }

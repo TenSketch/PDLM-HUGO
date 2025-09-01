@@ -1,6 +1,6 @@
 <footer class="py-5 bg-dark text-white">
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-around">
 
             <!-- About -->
             <div class=" col-md-3 mb-4">
@@ -13,11 +13,20 @@
             <div class=" col-md-2 mb-4">
                 <h5>Quick Links</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                    {{ $page := . }}
+                {{ range site.Menus.footer }}
+                 <li class="nav-item">
+                    <a class="text-white text-decoration-none"
+                        href="{{ .URL | safeURL }}">
+                        {{ .Pre | safeHTML }}{{ .Name }}
+                    </a>
+                </li>
+                {{ end }}
+                    <!-- <li><a href="#" class="text-white text-decoration-none">Home</a></li>
                     <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
                     <li><a href="#" class="text-white text-decoration-none">Our Work</a></li>
                     <li><a href="#" class="text-white text-decoration-none">Success Stories</a></li>
-                    <li><a href="#" class="text-white text-decoration-none">Donate</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Donate</a></li> -->
                 </ul>
             </div>
 
@@ -26,8 +35,11 @@
                 <h5>Contact Us</h5>
                 <p class="small mb-1"><i class="fas fa-map-marker-alt me-2"></i>No: 247 Reddiyar Street, Seliyamedu ,
                     Bahour commune , Puducherry-607402</p>
-                <p class="small mb-1"><i class="fas fa-phone-alt me-2"></i>+91 9842178711</p>
-                <p class="small mb-1"><i class="fas fa-envelope me-2"></i>contact@partagedanslemonde.org</p>
+                <a href="tel:+919842178711" class="d-block text-decoration-none text-white small mb-1"><i class="fas fa-phone-alt me-2"></i>+91 9842178711</a>
+                <a href="mailto:subasri@satyaspecialschool.org" class="d-block text-decoration-none text-white small mb-1"><i class="fas fa-envelope me-2"></i>subasri@satyaspecialschool.org</a>
+                <!-- <p class="small mb-1"><i class="fas fa-envelope me-2"></i>contact@partagedanslemonde.org</p> -->
+
+                
             </div>
 
             <!-- Social -->

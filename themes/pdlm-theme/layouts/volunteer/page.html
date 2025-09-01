@@ -1,0 +1,76 @@
+{{ define "main" }}
+
+<section class="volunteer-form row justify-content-center py-5">
+      <div class="col-lg-8 col-md-10">
+        <div class="card shadow-sm">
+          <div class="card-header bg-primary text-white">
+            <h3 class="mb-0">Volunteer Application Form</h3>
+            <p class="mb-0">Join our team of dedicated volunteers and make a meaningful impact.</p>
+          </div>
+          <div class="card-body">
+            <form id="volunter-form" name="volunteer-form" method="POST" netlify>
+              <!-- Personal Information -->
+              <h5 class="mb-3">Personal Information</h5>
+              <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name *</label>
+                <input type="text" name="Full Name" class="form-control" id="fullName" placeholder="Enter your full name" required>
+              </div>
+              <div class="mb-3">
+                <label for="mobile" class="form-label">Mobile Number *</label>
+                <input type="tel" name="Mobile number" class="form-control" id="mobile" placeholder="9876543210" pattern="[0-9]{10}" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address *</label>
+                <input type="email" name="Email id" class="form-control" id="email" placeholder="example@email.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="age" class="form-label">Age *</label>
+                <input type="number" name="Age" class="form-control" id="age" placeholder="Enter your age" required>
+              </div>
+              <div class="mb-3">
+                <label for="occupation" class="form-label">Occupation *</label>
+                <input type="text" name="Occupation" class="form-control" id="occupation" placeholder="Your occupation" required>
+              </div>
+              <!-- Volunteer Information -->
+              <h5 class="mb-3 mt-4">Volunteer Information</h5>
+              <div class="mb-3">
+                <label for="availability" class="form-label">Availability (hours per week) *</label>
+                <select class="form-select" name="Availability" id="availability" required>
+                  <option value="" selected>Select availability</option>
+                  <option value="1-5">1-5 hours</option>
+                  <option value="6-10">6-10 hours</option>
+                  <option value="11-20">11-20 hours</option>
+                  <option value="21+">21+ hours</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="skills" class="form-label">Skills & Expertise</label>
+                <textarea class="form-control" name="Skills & Expertise" id="skills" rows="3" placeholder="Teaching, Health, IT, etc."></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="interest" class="form-label">Areas of Interest *</label>
+                <select class="form-select" name="Areas of interest" id="interest" required>
+                  <option value="" selected>Select your interest</option>
+                  <option value="education">Education</option>
+                  <option value="health">Health</option>
+                  <option value="community">Community Service</option>
+                  <option value="environment">Environment</option>
+                  <option value="technology">Technology</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="experience" class="form-label">Previous Volunteer Experience</label>
+                <textarea class="form-control" name="Previous volunteer experience" id="experience" rows="3" placeholder="Describe any previous volunteer experience"></textarea>
+              </div>
+              
+              <small class="mb-3 form-text">
+                By submitting this form, you agree to be contacted about volunteer opportunities with our organization.
+              </small>
+              <button type="submit" class="btn btn-primary w-100 mt-3">Submit Application</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+{{ end }}

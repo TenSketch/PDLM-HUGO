@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg bg-secondary-light fixed-top shadow-sm py-0">
     <div class="container-fluid">
         <!-- Logo -->
-        <a class="navbar-brand py-0" href="{{ " /" | relURL }}">
+        <a class="navbar-brand py-0" href="{{ "/" | relURL }}">
             <img src="{{ .Site.Params.logo | relURL }}" alt="Logo PDLM" class="img-fluid logo">
         </a>
 
@@ -40,8 +40,7 @@
                 {{ else }}
                 <!-- Normal Menu -->
                 <li class="nav-item">
-                    <a class='{{ with .Params.class }}{{ . }}{{ else }}nav-link text-primary{{ end }} {{ if $page.IsMenuCurrent "main" . }}fw-bold text-primary{{ end }}'
-                        href="{{ .URL | safeURL }}">
+                    <a class='nav-link text-primary' href="{{ .URL | safeURL }}">
                         {{ .Pre | safeHTML }}{{ .Name }}
                     </a>
                 </li>

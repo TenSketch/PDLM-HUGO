@@ -41,13 +41,13 @@ og_image = "/ogimage.jpg"
     [[menu.main]]
       parent = "reports"
       name = "Audit Reports"
-      url = "/auditreport/"
+      url = "/audit-report/"
       weight = 1
 
     [[menu.main]]
       parent = "reports"
       name = "Annual Reports"
-      url = "/annualreport/"
+      url = "/annual-report/"
       weight = 2
 
   [[menu.main]]
@@ -65,13 +65,53 @@ og_image = "/ogimage.jpg"
   [[menu.main]]
     identifier = "whatsapp"
     name = "WhatsApp"
-    url = "https://wa.me/+919876543210"
+    url = "https://wa.me/+919842178711"
     weight = 8
     pre = "<i class='fab fa-whatsapp'></i> "
 
   [[menu.main]]
     name = "Get Involved"
-    url = "/posts/"
+    url = "/volunteer/"
     weight = 9
     params = { class = "btn btn-primary text-light" }
 
+
+  [[menu.footer]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.footer]]
+    name = "Success Stories"
+    url = "/success-stories/"
+    weight = 2
+
+  [[menu.footer]]
+    name = "About Us"
+    url = "/about-us/"
+    weight = 3
+
+  [[menu.footer]]
+    name = "Our Work"
+    url = "/our-work/"
+    weight = 4
+    
+  [[menu.footer]]
+    name = "Audit Reports"
+    url = "/audit-report/"
+    weight = 5
+
+  [[menu.footer]]
+    name = "Annual Reports"
+    url = "/annual-report/"
+    weight = 6
+
+  [[menu.footer]]
+    name = "Contact Us"
+    url = "/contact-us/"
+    weight = 7
+
+  [[menu.footer]]
+    name = "Volunteer with us"
+    url = "/volunteer/"
+    weight = 8

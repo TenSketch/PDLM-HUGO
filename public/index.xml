@@ -16,6 +16,27 @@
       <description>&lt;h2 id=&#34;about-contnenknk&#34;&gt;about contnenknk&lt;/h2&gt;&#xA;&lt;p&gt;lorem&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Annual Reports</title>
+      <link>http://localhost:1313/annual-report/</link>
+      <pubDate>Wed, 01 Jan 2025 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/annual-report/</guid>
+      <description>&lt;h2 id=&#34;about-contnenknk&#34;&gt;about contnenknk&lt;/h2&gt;&#xA;&lt;p&gt;lorem&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Audit Reports</title>
+      <link>http://localhost:1313/audit-report/</link>
+      <pubDate>Wed, 01 Jan 2025 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/audit-report/</guid>
+      <description>&lt;h2 id=&#34;about-contnenknk&#34;&gt;about contnenknk&lt;/h2&gt;&#xA;&lt;p&gt;lorem&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact us</title>
+      <link>http://localhost:1313/contact-us/</link>
+      <pubDate>Wed, 01 Jan 2025 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/contact-us/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Our Work</title>
       <link>http://localhost:1313/our-work/</link>
       <pubDate>Wed, 01 Jan 2025 08:00:00 -0700</pubDate>
@@ -28,6 +49,13 @@
       <pubDate>Wed, 01 Jan 2025 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/success-stories/</guid>
       <description>&lt;h2 id=&#34;about-contnenknk&#34;&gt;about contnenknk&lt;/h2&gt;&#xA;&lt;p&gt;lorem&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Volunteer with us</title>
+      <link>http://localhost:1313/volunteer/</link>
+      <pubDate>Wed, 01 Jan 2025 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/volunteer/</guid>
+      <description></description>
     </item>
     <item>
       <title>Post 3</title>

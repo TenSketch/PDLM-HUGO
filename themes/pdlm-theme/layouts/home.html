@@ -1,15 +1,17 @@
 {{ define "main" }}
 <!-- carousel hero -->
-<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="false">
   <div class="carousel-inner">
     {{ range $index, $slide := .Params.carousel }}
       <div class="carousel-item {{ if eq $index 0 }}active{{ end }}">
         <img src="{{ $slide.src | relURL }}" class="d-block w-100" alt="{{ $slide.alt }}">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="display-5 fw-bold">{{ $slide.title }}</h1>
+        <!-- <div class="overlay position-absolute"></div> -->
+        <div class="carousel-caption bg-dark bg-opacity-50 rounded ">
+          <h1 class="fw-bold">{{ $slide.title }}</h1>
           <p class="lead">{{ $slide.description }}</p>
           <a href="{{ $slide.button.link }}" class="btn btn-primary btn-lg">{{ $slide.button.text }}</a>
         </div>
+        <!-- </div> -->
       </div>
     {{ end }}
   </div>
