@@ -5,13 +5,11 @@
     {{ range $index, $slide := .Params.carousel }}
       <div class="carousel-item {{ if eq $index 0 }}active{{ end }}">
         <img src="{{ $slide.src | relURL }}" class="d-block w-100" alt="{{ $slide.alt }}">
-        <!-- <div class="overlay position-absolute"></div> -->
-        <div class="carousel-caption bg-dark bg-opacity-50 rounded ">
+        <div class="carousel-caption  ">
           <h1 class="fw-bold">{{ $slide.title }}</h1>
           <p class="lead">{{ $slide.description }}</p>
           <a href="{{ $slide.button.link }}" class="btn btn-primary btn-lg">{{ $slide.button.text }}</a>
         </div>
-        <!-- </div> -->
       </div>
     {{ end }}
   </div>

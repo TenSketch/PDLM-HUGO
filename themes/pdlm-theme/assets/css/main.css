@@ -1,10 +1,10 @@
 :root {
-    --header-height: 15vh;
     --clr-primary: hsl(314, 75%, 36%);
     --clr-primary-light: hsl(289, 27%, 80%);
     --clr-secondary: hsl(191, 100%, 36%);
     --clr-secondary-light: hsl(191, 100%, 80%);
     --clr-light: hsl(0, 0%, 100%);
+    /* --nav-height: 19vh; */
 
 }
 
@@ -56,7 +56,9 @@
 .text-light {
     color: var(--clr-light) !important;
 }
-
+body{
+    background-color: transparent!important;
+}
 h1,
 h2,
 h3,
@@ -120,14 +122,19 @@ h6 {
     color: var(--clr-primary);
 }
 
-nav {
-    min-height: var(--header-height);
-}
 
 main {
-    padding-top: var(--header-height);
+    /* @media(min-width: 991px){
+    padding-top: var(--nav-height);
+} */
 }
 
+.navbar{
+    /* min-height: var(--nav-height);
+    @media(min-width:991px){
+        height: var(--nav-height);
+    } */
+}
 .navbar-brand {
     /* display: unset!important; */
     /* outline: 1px red solid; */
@@ -135,7 +142,8 @@ main {
 }
 
 .logo {
-    max-height: 80px;
+    /* max-height: 80px; */
+    width: max(30%, 250px);
 }
 
 .bg-image {
@@ -150,32 +158,19 @@ main {
 
 
 /* carousel styles */
+.carousel-item{
+    /* @media(min-width: 991px){
+        height: calc(100vh - var(--nav-height));
 
-@media(min-width:768px){
-
-    .carousel-inner{
-        min-height: 90vh;
-    }
-    .carousel-item{
-        height: 100%;
-        overflow: hidden;
-        img{
-            /* width: 100%; */
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-}
-.carousel-caption{
-  
-    /* h1{
-        font-size: min(1.5rem, 4rem);
-     
-    }
-    p{
-        font-size:  mins( 1rem, 1.5rem );
     } */
+
 }
+.lead{
+    color: var(--clr-secondary);
+}
+
+
+
 .pt-5 {
     padding-top: 5rem;
 }
@@ -185,10 +180,7 @@ main {
     padding-block: 8rem;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
+
 
 .alt-sections {
     .row:nth-of-type(even) {
@@ -199,3 +191,4 @@ main {
     }
 
 }
+
