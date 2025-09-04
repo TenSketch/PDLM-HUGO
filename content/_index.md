@@ -9,21 +9,21 @@ carousel: [
     alt: "Selimedu building",
     title: "Our Campus",
     description: "A peaceful learning environment designed for growth and creativity.",
-    button: { text: "Explore Campus", link: "/campus" }
+    button: { text: "Explore Campus", link: "/about-us" }
   },
   { 
     src: "/images/Sathya_School-Selimedu-children-grooming-photo.jpg", 
     alt: "Children grooming",
     title: "Student Development",
     description: "Holistic grooming that builds character, confidence, and values.",
-    button: { text: "Know More", link: "/student-development" }
+    button: { text: "Know More", link: "/our-work" }
   },
   { 
     src: "/images/Sathya_School-Selimedu-children-activities-photo.jpg", 
     alt: "Children activities",
     title: "Activities & Fun",
     description: "Engaging activities that inspire teamwork, creativity, and joy.",
-    button: { text: "See Activities", link: "/activities" }
+    button: { text: "See Activities", link: "/success-stories" }
   }
 ]
 

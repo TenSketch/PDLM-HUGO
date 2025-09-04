@@ -1,11 +1,10 @@
 {{ define "main" }}
-
-  <section class="about-banner py-5 bg-light text-center">
+  <section class="page-banner py-5 text-center d-flex align-items-center">
       <div class="container">
         <!-- hugo default front matter is title -->
-        <h1 class="fw-bold">{{ page.Title }}</h1>
+        <h1 class="fw-bold text-secondary">{{ page.Title }}</h1>
         <!-- custom front matter is subtitle -->
-        <p class="lead">{{ .Params.subtitle }}</p>
+        <p class="lead text-white">{{ .Params.subtitle }}</p>
       </div>
     </section>
     {{ partial "alt-sections.html" . }}

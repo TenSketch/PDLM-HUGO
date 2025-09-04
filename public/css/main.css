@@ -56,9 +56,11 @@
 .text-light {
     color: var(--clr-light) !important;
 }
-body{
-    background-color: transparent!important;
+
+body {
+    background-color: transparent !important;
 }
+
 h1,
 h2,
 h3,
@@ -104,21 +106,42 @@ h6 {
     border-color: var(--clr-secondary) !important;
 }
 
+.page-banner {
+    background: url('/images/Sathya_School-Selimedu-group-photo.jpg') center center / cover no-repeat fixed;
+    height: 50vh;
+    z-index: 1;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        /* dark overlay */
+        z-index: -1;
+    }
+}
+
+
 /* --- Cards --- */
 .card {
-    border: 1px solid var(--clr-primary-light);
-    border-radius: .5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: none;
+    /* border-radius: .5rem; */
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); */
+
+    border-radius: 1rem;
+    /* background: #ffffff; */
+    box-shadow: 20px 20px 60px #d9d9d9,
+        -20px -20px 60px #ffffff;
 }
 
 .card-header {
-    background-color: var(--clr-primary-light);
+    /* background-color: var(--clr-primary-light); */
     color: var(--clr-primary);
     font-weight: 500;
 }
 
 .card-body {
-    background-color: var(--clr-light);
+    /* background-color: var(--clr-light); */
     color: var(--clr-primary);
 }
 
@@ -129,12 +152,13 @@ main {
 } */
 }
 
-.navbar{
+.navbar {
     /* min-height: var(--nav-height);
     @media(min-width:991px){
         height: var(--nav-height);
     } */
 }
+
 .navbar-brand {
     /* display: unset!important; */
     /* outline: 1px red solid; */
@@ -158,21 +182,40 @@ main {
 
 
 /* carousel styles */
-.carousel-item{
-    /* @media(min-width: 991px){
-        height: calc(100vh - var(--nav-height));
+.carousel-item {
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        inset: 0;
+        background-color: black;
+        opacity: 0.6;
+        z-index: 1;
+    }
 
-    } */
+    .carousel-caption {
+        z-index: 2;
 
-}
-.lead{
-    color: var(--clr-secondary);
+        h1 {
+            color: var(--clr-primary-light);
+        }
+
+        .lead {
+            color: var(--clr-secondary-light);
+        }
+
+    }
+
 }
 
 
 
 .pt-5 {
     padding-top: 5rem;
+}
+
+.py-5 {
+    padding-block: 5rem;
 }
 
 /* padding-block custom */
@@ -191,4 +234,3 @@ main {
     }
 
 }
-

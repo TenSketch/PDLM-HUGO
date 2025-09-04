@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'Partage Dans Le Monde – Puducherry | Education, Healthcare & Community Development'
 theme = 'pdlm-theme'
 [params]
-favicon = "/images/favicon.ico"
+favicon = "/images/logo.png"
 description = "Discover how Partage Dans Le Monde – Puducherry transforms lives through education, healthcare, and sustainable community programs. Join us in making a lasting impact."
 keywords = "Partage Dans Le Monde Puducherry, NGO Puducherry, community development, education NGO India, healthcare support NGO, sustainable development NGO"
 author = "Dhanila - TenSketch"
