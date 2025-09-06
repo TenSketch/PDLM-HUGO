@@ -1,6 +1,6 @@
 {{ define "main" }}
 <!-- carousel hero -->
-<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="false">
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-inner">
     {{ range $index, $slide := .Params.carousel }}
       <div class="carousel-item {{ if eq $index 0 }}active{{ end }}">
